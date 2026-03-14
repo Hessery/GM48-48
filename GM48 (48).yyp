@@ -42,6 +42,7 @@
   "name":"GM48 (48)",
   "resources":[
     {"id":{"name":"obj_button_deal","path":"objects/obj_button_deal/obj_button_deal.yy",},},
+    {"id":{"name":"obj_clock","path":"objects/obj_clock/obj_clock.yy",},},
     {"id":{"name":"obj_control","path":"objects/obj_control/obj_control.yy",},},
     {"id":{"name":"obj_customer","path":"objects/obj_customer/obj_customer.yy",},},
     {"id":{"name":"obj_item","path":"objects/obj_item/obj_item.yy",},},

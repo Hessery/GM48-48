@@ -1,0 +1,1 @@
+global.round_timer = 10800; // Three minutes

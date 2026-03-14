@@ -24,6 +24,7 @@
   ],
   "ResourceOrderSettings":[
     {"name":"obj_button_deal","order":6,"path":"objects/obj_button_deal/obj_button_deal.yy",},
+    {"name":"obj_clock","order":3,"path":"objects/obj_clock/obj_clock.yy",},
     {"name":"obj_customer","order":7,"path":"objects/obj_customer/obj_customer.yy",},
     {"name":"obj_item","order":1,"path":"objects/obj_item/obj_item.yy",},
     {"name":"obj_menu_parent","order":3,"path":"objects/obj_menu_parent/obj_menu_parent.yy",},
