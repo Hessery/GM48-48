@@ -1,20 +1,15 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_menu_exit",
-  "eventList": [
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":7,"eventType":6,"isDnD":false,},
-  ],
+  "name": "obj_shelf",
+  "eventList": [],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Menu",
-    "path": "folders/Objects/Menu.yy",
+    "name": "Game",
+    "path": "folders/Objects/Game.yy",
   },
-  "parentObjectId": {
-    "name": "obj_menu_parent",
-    "path": "objects/obj_menu_parent/obj_menu_parent.yy",
-  },
+  "parentObjectId": null,
   "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,
@@ -31,8 +26,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_menu_exit",
-    "path": "sprites/spr_menu_exit/spr_menu_exit.yy",
+    "name": "spr_shelf",
+    "path": "sprites/spr_shelf/spr_shelf.yy",
   },
   "spriteMaskId": null,
   "visible": true,

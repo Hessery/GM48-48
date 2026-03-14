@@ -1,1 +1,1 @@
-room_goto(rm_game)
+global.game_state = "game";

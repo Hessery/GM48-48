@@ -4,5 +4,17 @@ if (instance_number(obj_control) > 1) {
 	return
 }
 
+
+// Setup game state
+global.game_state = "menu";
+global.menu_alpha = 1;
+global.debug = true;
+
+
+// Debug
+if (global.debug) { window_set_size(960, 540) }
+
+
+// Setup nice window resizing
 ww_previous = window_get_width() / 16;
 wh_previous = window_get_height() / 9;
