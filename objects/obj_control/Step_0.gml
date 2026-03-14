@@ -22,6 +22,7 @@ switch (global.game_state) {
 	break;
 	
 	case "game":
+		// Deactivate menu
 		global.menu_alpha = max(global.menu_alpha - menu_alpha_delta, 0);
 		
 		if (global.menu_alpha = 0) {
@@ -29,5 +30,39 @@ switch (global.game_state) {
 			instance_deactivate_object(obj_menu_play);
 			instance_deactivate_object(obj_menu_exit);
 		}
+		
+		// Move between screens
+		var screen_height = 1080;
+		var zone_width = 64;
+
+		if (global.screen = "floor") {
+			
+			// Switching screen to counter
+			if (mouse_y > screen_height - zone_width) {
+				global.screen = "counter";
+			}
+			
+			// Move camera
+			var cam = view_camera;
+			var cam_y = camera_get_view_y(cam);
+			var dif =  cam_y;
+			camera_set_view_pos(cam, 0, cam_y - (dif / 16))
+	
+		} else {
+			
+			// Switching screen to floor
+			// Switching screen to counter
+			if (mouse_y < screen_height + zone_width) {
+				global.screen = "floor";
+			}
+			
+			// Move camera
+			var cam = view_camera;
+			var cam_y = camera_get_view_y(cam);
+			var dif = 1080 - cam_y;
+			camera_set_view_pos(cam, 0, cam_y + (dif / 16))
+			
+		}
+		
 	break;
 }
