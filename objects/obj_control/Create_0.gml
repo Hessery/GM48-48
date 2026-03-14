@@ -25,3 +25,7 @@ global.store_value = 0;
 // Setup nice window resizing
 ww_previous = window_get_width() / 16;
 wh_previous = window_get_height() / 9;
+
+
+// View switching
+reset_timer = 0;

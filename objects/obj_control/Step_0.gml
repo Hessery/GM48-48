@@ -35,34 +35,38 @@ switch (global.game_state) {
 		// Move between screens
 		var screen_height = 1080;
 		var zone_width = 72;
+		var cam = view_camera;
+		var cam_y = camera_get_view_y(cam);
+		var reset_timer_length = 15;
+	
+		if (reset_timer != 0) { reset_timer -- }
 
 		if (global.screen = "floor") {
 			
 			// Switching screen to counter
-			if (mouse_y > screen_height - zone_width) {
+			if (mouse_y > screen_height - zone_width && reset_timer = 0) {
 				global.screen = "counter";
+				reset_timer = reset_timer_length;
 			}
 			
 			// Move camera
-			var cam = view_camera;
-			var cam_y = camera_get_view_y(cam);
-			var dif =  cam_y;
+			var dif = cam_y;
 			camera_set_view_pos(cam, 0, cam_y - (dif / 16))
 	
 		} else {
 			
 			// Switching screen to floor
-			if (mouse_y < screen_height + zone_width) {
+			if (mouse_y < screen_height + zone_width && reset_timer = 0) {
 				global.screen = "floor";
+				reset_timer = reset_timer_length;
 			}
 			
 			// Move camera
-			var cam = view_camera;
-			var cam_y = camera_get_view_y(cam);
 			var dif = 1080 - cam_y;
 			camera_set_view_pos(cam, 0, cam_y + (dif / 16))
 			
 		}
+		
 		
 	break;
 }
