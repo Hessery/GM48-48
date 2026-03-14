@@ -1,6 +1,8 @@
 if (global.game_state = "game") {
 
 	// Pickup items
+	// We use a vector for the offset rather than x and y so we can scale the
+	// image and the selection together
 	if (mouse_check_button_pressed(mb_left)) {
 		var item_half_width = (image_size / 2);
 		if (
@@ -11,15 +13,17 @@ if (global.game_state = "game") {
 		) {
 		
 			picked_up = true;
-			x_dif = mouse_x - x;
-			y_dif = mouse_y - y;
+			mouse_dir = point_direction(x, y, mouse_x, mouse_y);
+			mouse_dis = point_distance(x, y, mouse_x, mouse_y) / image_scale;
 		
 		}
 	}
 
 	if (mouse_check_button(mb_left) && picked_up) {
-		x = mouse_x - x_dif;
-		y = mouse_y - y_dif;
+		
+		x = mouse_x - lengthdir_x(mouse_dis * image_scale, mouse_dir);
+		y = mouse_y - lengthdir_y(mouse_dis * image_scale, mouse_dir)
+		
 	}
 
 	if (mouse_check_button_released(mb_left)) {

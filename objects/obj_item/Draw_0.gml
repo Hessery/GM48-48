@@ -1,7 +1,7 @@
 // Dynamically draw the sprite the correct size
-var item_id = 0;
 var sprite_size = sprite_get_width(sprite_index);
 var target_size = 96;
+if (y > 1080) { target_size = 256 }
 var target_image_scale  = (1 / sprite_size) * target_size;
 var dif = target_image_scale - image_scale;
 var resize_speed = 8;
@@ -30,6 +30,7 @@ if (global.debug) {
 		"Image scale: " + string(image_scale) + 
 		"\ntarget image scale: " + string(target_image_scale) + 
 		"\ndif: " + string(dif) +
-		"\ny: " + string(y)
+		"\ny: " + string(y) + 
+		"\nValue: " + string(value)
 	)
 }
