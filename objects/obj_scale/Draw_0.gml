@@ -5,4 +5,4 @@ var target_arm_angle = clamp(left_basket.total_value - right_basket.total_value,
 var angle_diff = target_arm_angle - arm_angle;
 arm_angle += angle_diff / 10;
 
-draw_text(x, y - 100, arm_angle);
+if (global.debug) { draw_text(x, y - 100, arm_angle) };

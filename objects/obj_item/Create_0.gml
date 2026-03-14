@@ -7,6 +7,6 @@ y_dif = 0;
 //move_start_x;
 //move_start_y;
 
-item_id = 0;
-value_array = [ 10 ];
+value_array = [ 10, 5, 20 ];
+item_id = random(array_length(value_array));
 value = value_array[item_id];
