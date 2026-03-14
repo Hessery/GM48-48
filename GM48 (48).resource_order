@@ -29,7 +29,7 @@
     {"name":"obj_menu_parent","order":3,"path":"objects/obj_menu_parent/obj_menu_parent.yy",},
     {"name":"obj_menu_play","order":1,"path":"objects/obj_menu_play/obj_menu_play.yy",},
     {"name":"obj_menu_title","order":2,"path":"objects/obj_menu_title/obj_menu_title.yy",},
-    {"name":"obj_offer","order":3,"path":"objects/obj_offer/obj_offer.yy",},
+    {"name":"obj_offer","order":8,"path":"objects/obj_offer/obj_offer.yy",},
     {"name":"obj_phy_static","order":1,"path":"objects/obj_phy_static/obj_phy_static.yy",},
     {"name":"obj_phy_wall","order":4,"path":"objects/obj_phy_wall/obj_phy_wall.yy",},
     {"name":"obj_scale_basket","order":5,"path":"objects/obj_scale_basket/obj_scale_basket.yy",},
