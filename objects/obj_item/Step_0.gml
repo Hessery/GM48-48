@@ -24,7 +24,9 @@ if (global.game_state = "game") {
 	if (mouse_check_button(mb_left) && picked_up) {
 		
 		phy_position_x = mouse_x - lengthdir_x(mouse_dis * image_scale, mouse_dir);
-		phy_position_y = mouse_y - lengthdir_y(mouse_dis * image_scale, mouse_dir)
+		phy_position_y = mouse_y - lengthdir_y(mouse_dis * image_scale, mouse_dir);
+		phy_speed_x = 0;
+		phy_speed_y = 0;
 		
 	}
 
