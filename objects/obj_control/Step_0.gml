@@ -1,6 +1,6 @@
 // Quick exit game
 if (keyboard_check(vk_escape)) { game_end() }
-
+if (keyboard_check_released(vk_space)) { global.debug = true }
 
 // Resize window
 var ww = window_get_width() / 16;
@@ -15,7 +15,6 @@ wh_previous = wh;
 
 // Game state switch
 var menu_alpha_delta = 0.1;
-
 switch (global.game_state) {
 	case "menu":
 		global.menu_alpha = min(global.menu_alpha + menu_alpha_delta, 1)
@@ -51,7 +50,6 @@ switch (global.game_state) {
 		} else {
 			
 			// Switching screen to floor
-			// Switching screen to counter
 			if (mouse_y < screen_height + zone_width) {
 				global.screen = "floor";
 			}
