@@ -1,2 +1,2 @@
-global.round_timer = 1000;//10800; // Three minutes
+global.round_timer = 100;//10800; // Three minutes
 night_alpha = 0;

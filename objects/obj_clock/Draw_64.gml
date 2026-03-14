@@ -11,6 +11,7 @@ if ((global.round_timer / 60) < 60) {
 	draw_set_alpha(night_alpha);
 	draw_rectangle(0, 0, 1920, 1080, false)
 	draw_set_alpha(previous_alpha);
+	draw_set_colour(previous_colour);
 	
 } else {
 	
