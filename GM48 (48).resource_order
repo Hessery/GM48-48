@@ -1,10 +1,12 @@
 {
-  "FolderOrderSettings": [
+  "FolderOrderSettings":[
     {"name":"Animation Curves","order":12,"path":"folders/Animation Curves.yy",},
     {"name":"Extensions","order":14,"path":"folders/Extensions.yy",},
     {"name":"Fonts","order":7,"path":"folders/Fonts.yy",},
     {"name":"Notes","order":13,"path":"folders/Notes.yy",},
     {"name":"Objects","order":9,"path":"folders/Objects.yy",},
+    {"name":"Game","order":5,"path":"folders/Objects/Game.yy",},
+    {"name":"Menu","order":4,"path":"folders/Objects/Menu.yy",},
     {"name":"Particle Systems","order":15,"path":"folders/Particle Systems.yy",},
     {"name":"Paths","order":4,"path":"folders/Paths.yy",},
     {"name":"Rooms","order":10,"path":"folders/Rooms.yy",},
@@ -13,19 +15,17 @@
     {"name":"Shaders","order":6,"path":"folders/Shaders.yy",},
     {"name":"Sounds","order":3,"path":"folders/Sounds.yy",},
     {"name":"Sprites","order":1,"path":"folders/Sprites.yy",},
+    {"name":"Game","order":4,"path":"folders/Sprites/Game.yy",},
+    {"name":"Menu","order":3,"path":"folders/Sprites/Menu.yy",},
     {"name":"Tile Sets","order":2,"path":"folders/Tile Sets.yy",},
     {"name":"Timelines","order":8,"path":"folders/Timelines.yy",},
-    {"name":"Menu","order":4,"path":"folders/Objects/Menu.yy",},
-    {"name":"Menu","order":3,"path":"folders/Sprites/Menu.yy",},
-    {"name":"Game","order":5,"path":"folders/Objects/Game.yy",},
-    {"name":"Game","order":4,"path":"folders/Sprites/Game.yy",},
   ],
-  "ResourceOrderSettings": [
-    {"name":"obj_menu_play","order":1,"path":"objects/obj_menu_play/obj_menu_play.yy",},
-    {"name":"spr_menu_play","order":1,"path":"sprites/spr_menu_play/spr_menu_play.yy",},
-    {"name":"obj_menu_title","order":2,"path":"objects/obj_menu_title/obj_menu_title.yy",},
-    {"name":"spr_menu_title","order":2,"path":"sprites/spr_menu_title/spr_menu_title.yy",},
+  "ResourceOrderSettings":[
     {"name":"obj_control","order":2,"path":"objects/obj_control/obj_control.yy",},
     {"name":"obj_menu_parent","order":3,"path":"objects/obj_menu_parent/obj_menu_parent.yy",},
+    {"name":"obj_menu_play","order":1,"path":"objects/obj_menu_play/obj_menu_play.yy",},
+    {"name":"obj_menu_title","order":2,"path":"objects/obj_menu_title/obj_menu_title.yy",},
+    {"name":"spr_menu_play","order":1,"path":"sprites/spr_menu_play/spr_menu_play.yy",},
+    {"name":"spr_menu_title","order":2,"path":"sprites/spr_menu_title/spr_menu_title.yy",},
   ],
 }
