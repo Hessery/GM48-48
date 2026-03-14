@@ -1,3 +1,7 @@
+// Random
+randomise();
+
+
 // Dont have more than one control object per game
 if (instance_number(obj_control) > 1) { 
 	instance_destroy();
@@ -8,7 +12,7 @@ if (instance_number(obj_control) > 1) {
 // Setup game state
 global.game_state = "menu";
 global.menu_alpha = 1;
-global.debug = true;
+global.debug = false;
 global.screen = "floor";
 
 
