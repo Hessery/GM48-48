@@ -40,6 +40,7 @@
   },
   "name":"GM48 (48)",
   "resources":[
+    {"id":{"name":"obj_button_deal","path":"objects/obj_button_deal/obj_button_deal.yy",},},
     {"id":{"name":"obj_control","path":"objects/obj_control/obj_control.yy",},},
     {"id":{"name":"obj_item","path":"objects/obj_item/obj_item.yy",},},
     {"id":{"name":"obj_menu_exit","path":"objects/obj_menu_exit/obj_menu_exit.yy",},},
@@ -54,6 +55,8 @@
     {"id":{"name":"obj_scale","path":"objects/obj_scale/obj_scale.yy",},},
     {"id":{"name":"obj_shelf","path":"objects/obj_shelf/obj_shelf.yy",},},
     {"id":{"name":"rm_game","path":"rooms/rm_game/rm_game.yy",},},
+    {"id":{"name":"spr_button_deal","path":"sprites/spr_button_deal/spr_button_deal.yy",},},
+    {"id":{"name":"spr_glow","path":"sprites/spr_glow/spr_glow.yy",},},
     {"id":{"name":"spr_items","path":"sprites/spr_items/spr_items.yy",},},
     {"id":{"name":"spr_menu_exit","path":"sprites/spr_menu_exit/spr_menu_exit.yy",},},
     {"id":{"name":"spr_menu_play","path":"sprites/spr_menu_play/spr_menu_play.yy",},},

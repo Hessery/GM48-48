@@ -13,6 +13,8 @@ collision_rectangle_list(
 )
 
 total_value = 0;
+items = [];
 for (var i = 0; i < ds_list_size(list); i ++) {
 	total_value += list[| i].value
+	items[i] = list[| i];
 }
