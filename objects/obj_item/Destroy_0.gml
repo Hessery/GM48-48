@@ -1,0 +1,1 @@
+if (instance_exists(node)) { instance_destroy(node) }

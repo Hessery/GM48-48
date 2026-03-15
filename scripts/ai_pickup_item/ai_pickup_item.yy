@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"ai_pickup_item",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"ai_pickup_item",
+  "parent":{
+    "name":"AI",
+    "path":"folders/Scripts/AI.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

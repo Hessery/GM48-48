@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"ai_leave_shop",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"ai_leave_shop",
+  "parent":{
+    "name":"AI",
+    "path":"folders/Scripts/AI.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

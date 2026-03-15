@@ -25,7 +25,7 @@
   ],
   "name":"spr_items",
   "nineSlice":null,
-  "origin":4,
+  "origin":9,
   "parent":{
     "name":"Game",
     "path":"folders/Sprites/Game.yy",

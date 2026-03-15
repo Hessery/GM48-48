@@ -1,0 +1,6 @@
+#macro s_pickup_item		"pickup item"
+#macro s_leave_shop			"leave shop"
+#macro s_mill_about			"mill about"
+#macro s_queue				"queue"
+#macro s_approach_counter	"goto counter"
+#macro s_enter_shop			"enter shop"

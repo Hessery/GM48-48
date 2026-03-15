@@ -2,6 +2,34 @@ if (y > 1080) { phy_active = true } else { phy_active = false }
 
 if (global.game_state = "game") {
 	
+	// Make nodes for pathfinding
+	// Check if on a shelf
+	if (!picked_up) {
+		if (y < 1080 && collision_point(x, y, obj_shelf, false, true)) { 
+			on_a_shelf = true;
+		} else {
+			on_a_shelf = false;
+			// Delete node if not on a shelf
+			if (node != -1) {
+				instance_destroy(node);
+				node = -1;
+			}
+		}
+	
+		// Make our pathfinding node
+		if (on_a_shelf && node = -1) {
+			if (collision_point(x - 96, y, obj_shelf, false, true)) { side = 96 } else { side = -96 }
+			node = instance_create_depth(x + side, y, depth, obj_path_node);
+			node.item = id;
+		}
+	} else {
+		// Remove our node. Dont come buy me im held.
+		if (node != -1) {
+			instance_destroy(node);
+			node = -1;
+		}
+	}
+	
 	// Pickup items
 	// We use a vector for the offset rather than x and y so we can scale the
 	// image and the selection together
