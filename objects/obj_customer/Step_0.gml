@@ -24,6 +24,10 @@ if (flipped_recently_timer) {
 	flipped_recently_timer--;
 }	
 
+if (subtitle_timer > 0) {
+	subtitle_timer--;
+}
+
 // Animate
 if (xprevious > x) { if (!flipped_recently_timer) { flip_image = -1; flipped_recently_timer = flipped_recently_timer_default; } }
 if (xprevious < x) { if (!flipped_recently_timer) { flip_image = 1; flipped_recently_timer = flipped_recently_timer_default; } }

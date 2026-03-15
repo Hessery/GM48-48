@@ -12,7 +12,10 @@ function ai_pickup_item(){
 	if (point_distance(x, y, desx, desy) < walk_speed + 1) {
 		state = s_queue;
 		place = enqueue();
-		holding = target_item.item_id; // Dunno why but do
+		trade_item_id = target_item.item_id;
+		trade_item_value = target_item.value;
+		trade_item_shop_owned = true;
+		holding = trade_item_id; // Dunno why but do
 		instance_destroy(target_item);
 		target_item = -1;
 		return

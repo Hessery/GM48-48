@@ -10,7 +10,7 @@ var offered_items = obj_offer.offer_items;
 var right_basket_items = right_basket.items;
 for (var i = 0; i < array_length(right_basket_items); i ++) {
 	for (var o = 0; o < array_length(offered_items); o ++) {
-		if (right_basket_items[i] = offered_items[o]) {
+		if (right_basket_items[i] == offered_items[o]) {
 			// Remove the value from the right basket
 			right_basket_value -= right_basket_items[i].value;
 		}

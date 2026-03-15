@@ -1,5 +1,5 @@
 offer_items = []
-for (i = 0; i < random_range(1, 3); i ++) {
+for (var i = 0; i < array_length(offer_items); i ++) {
 	
 	offer_items[i] = instance_create_depth(x + 100, y + 100, depth, obj_item);
 	

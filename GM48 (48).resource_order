@@ -59,6 +59,7 @@
     {"name":"spr_foreground_windows","order":20,"path":"sprites/spr_foreground_windows/spr_foreground_windows.yy",},
     {"name":"spr_glow","order":7,"path":"sprites/spr_glow/spr_glow.yy",},
     {"name":"spr_hair","order":1,"path":"sprites/spr_hair/spr_hair.yy",},
+    {"name":"spr_import_2","order":5,"path":"sprites/spr_import_2/spr_import_2.yy",},
     {"name":"spr_import","order":17,"path":"sprites/spr_import/spr_import.yy",},
     {"name":"spr_items","order":1,"path":"sprites/spr_items/spr_items.yy",},
     {"name":"spr_menu_play","order":1,"path":"sprites/spr_menu_play/spr_menu_play.yy",},
