@@ -3,7 +3,7 @@ if (global.game_state != "game") { return }
 image_index = 0;
 
 var customer = global.customer_at_counter;
-if (is_undefined(customer) || !instance_exists(customer)) { return }
+if (is_undefined(customer) || !instance_exists(customer)) { exit; }
 
 // Evaluate if the customer accepts the offer based on trade_tolerance
 var offered_items = obj_offer.offer_items;
@@ -25,6 +25,8 @@ if (shop_offer_value < min_acceptable_value) {
 	for (var i = 0; i < array_length(offered_items); i ++) {
 		if (instance_exists(offered_items[i])) { instance_destroy(offered_items[i]); }
 	}
+	
+	audio_play_sound(trade_fail, 0, false);
 	obj_offer.offer_items = [];
 	customer.subtitle_text = choose(
 		"No way. I'm out.",
@@ -91,8 +93,42 @@ for (var i= 0; i < array_length(offered_items); i ++) {
 	
 }
 
+// Drop any remaining items off the scale onto the counter
+var drop_left = obj_scale.left_basket.items;
+var drop_right = obj_scale.right_basket.items;
+for (var i = 0; i < array_length(drop_left); i ++) {
+	if (instance_exists(drop_left[i])) {
+		var drop_x = drop_left[i].x;
+		var drop_y = drop_left[i].y + 200;
+		if (instance_exists(obj_scale)) {
+			drop_x = obj_scale.left_basket.x + irandom_range(-80, 80);
+			drop_y = obj_scale.y + 220;
+		}
+		drop_left[i].phy_position_x = drop_x;
+		drop_left[i].phy_position_y = drop_y;
+		drop_left[i].phy_speed_x = 0;
+		drop_left[i].phy_speed_y = 0;
+	}
+}
+for (var i = 0; i < array_length(drop_right); i ++) {
+	if (instance_exists(drop_right[i])) {
+		var drop_x = drop_right[i].x;
+		var drop_y = drop_right[i].y + 200;
+		if (instance_exists(obj_scale)) {
+			drop_x = obj_scale.right_basket.x + irandom_range(-80, 80);
+			drop_y = obj_scale.y + 220;
+		}
+		drop_right[i].phy_position_x = drop_x;
+		drop_right[i].phy_position_y = drop_y;
+		drop_right[i].phy_speed_x = 0;
+		drop_right[i].phy_speed_y = 0;
+	}
+}
+
 // Stop customer claim on offered items
 obj_offer.offer_items = [];
+
+audio_play_sound(trade_accept, 0, false);
 
 customer.subtitle_text = choose(
 	"Great trade, thanks!",

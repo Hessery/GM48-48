@@ -1,3 +1,4 @@
 draw_self();
-draw_text(x, y + 300, label);
+draw_set_halign(fa_center);
+draw_text(x, y - 50, label);
 if (global.debug) { draw_text(x, y, total_value) };

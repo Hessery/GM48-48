@@ -48,6 +48,8 @@
     {"name":"enqueue","order":6,"path":"scripts/enqueue/enqueue.yy",},
     {"name":"macros","order":2,"path":"scripts/macros/macros.yy",},
     {"name":"move","order":7,"path":"scripts/move/move.yy",},
+    {"name":"trade_accept","order":2,"path":"sounds/trade_accept/trade_accept.yy",},
+    {"name":"trade_fail","order":1,"path":"sounds/trade_fail/trade_fail.yy",},
     {"name":"spr_acc","order":3,"path":"sprites/spr_acc/spr_acc.yy",},
     {"name":"spr_background_floor","order":18,"path":"sprites/spr_background_floor/spr_background_floor.yy",},
     {"name":"spr_beard","order":2,"path":"sprites/spr_beard/spr_beard.yy",},

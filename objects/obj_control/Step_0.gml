@@ -1,13 +1,13 @@
 // Special controls
 if (keyboard_check(vk_escape)) { game_end() }
-if (keyboard_check_released(vk_space)) { global.debug = !global.debug }
-if (keyboard_check(ord("R"))) { game_restart() };
-if (keyboard_check_pressed(vk_enter)) {
-	//var next_in_line = array_shift(global.queue);
-	if (global.customer_at_counter != undefined) {
-		global.customer_at_counter.state = s_leave_shop;
-	}
-}
+//if (keyboard_check_released(vk_space)) { global.debug = !global.debug }
+//if (keyboard_check(ord("R"))) { game_restart() };
+//if (keyboard_check_pressed(vk_enter)) {
+//	//var next_in_line = array_shift(global.queue);
+//	if (global.customer_at_counter != undefined) {
+//		global.customer_at_counter.state = s_leave_shop;
+//	}
+// }
 
 
 //// Queue controller

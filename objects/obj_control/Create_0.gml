@@ -21,7 +21,7 @@ global.screen = "floor";
 global.day = 1;
 global.store_value = 0;
 global.queue = [];
-global.customer_at_counter = -1;
+global.customer_at_counter = undefined;
 
 // Debug
 if (global.debug) { window_set_size(960 * 1.5, 540 * 1.5) }

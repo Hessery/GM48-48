@@ -32,7 +32,11 @@ function ai_approach_counter(){
 			if (trade_item_id != -1) {
 				var trade_target_x = base_x;
 				var trade_target_y = base_y;
-				if (!selling_items) {
+				if (selling_items) {
+					// Customer is selling: put the item on the customer side
+					trade_target_x = left_x;
+					trade_target_y = left_y;
+				} else {
 					// Customer is buying: put the desired item on the shop side
 					trade_target_x = right_x;
 					trade_target_y = right_y;

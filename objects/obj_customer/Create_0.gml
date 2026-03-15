@@ -1,3 +1,5 @@
+audio_play_sound(customer_enter, 0, false);
+
 // Determine the characters stats
 trade_tolerance = irandom_range(0, 50);
 walk_speed		= random_range(3, 5);
