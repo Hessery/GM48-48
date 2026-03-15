@@ -9,6 +9,9 @@ image_index		= body;
 image_scale		= 0.3;
 flip_image		= 1;
 
+flipped_recently_timer = 0;
+flipped_recently_timer_default = 100;
+
 
 // AI
 state = s_enter_shop;
@@ -36,7 +39,7 @@ acc		= irandom(sprite_get_number(spr_acc) - 1);
 shirt	= irandom(sprite_get_number(spr_shirt) - 1);
 
 // No naked ladies pls thanks
-if (hair > 11) { hasShirt = 1 }
+if (hair > 11) { hasShirt = true }
 
 // pick selling or buying
 selling_items = false;

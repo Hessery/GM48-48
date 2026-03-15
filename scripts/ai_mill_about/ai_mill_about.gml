@@ -4,10 +4,8 @@ function ai_mill_about(){
 	
 	// Action
 	// Goto des with pathfinding
-	var dir = point_direction(x, y, desx, desy);
-	var dis = point_distance(x, y, desx, desy);
-	x += lengthdir_x(walk_speed, dir);
-	y += lengthdir_y(walk_speed, dir);
+
+	move();
 	
 	// Break
 	if (point_distance(x, y, desx, desy) < walk_speed + 1) {

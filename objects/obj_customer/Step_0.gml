@@ -20,6 +20,10 @@ switch (state) {
 	case s_leave_shop:			ai_leave_shop();		break;
 }
 
+if (flipped_recently_timer) {
+	flipped_recently_timer--;
+}	
+
 // Animate
-if (xprevious > x) { flip_image = -1 }
-if (xprevious < x) { flip_image = 1 }
+if (xprevious > x) { if (!flipped_recently_timer) { flip_image = -1; flipped_recently_timer = flipped_recently_timer_default; } }
+if (xprevious < x) { if (!flipped_recently_timer) { flip_image = 1; flipped_recently_timer = flipped_recently_timer_default; } }

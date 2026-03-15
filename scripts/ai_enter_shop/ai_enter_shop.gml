@@ -1,10 +1,7 @@
 function ai_enter_shop(){
 	
 	// Action
-	var dir = point_direction(x, y, desx, desy);
-	var dis = point_distance(x, y, desx, desy);
-	x += lengthdir_x(walk_speed, dir);
-	y += lengthdir_y(walk_speed, dir);
+	move();
 	
 	// Break
 	if (point_distance(x, y, desx, desy) < walk_speed) {
@@ -17,8 +14,7 @@ function ai_enter_shop(){
 			state = s_mill_about;
 		} else {
 			state = s_queue;
-			array_push(global.queue, id);
-			place = array_length(global.queue);
+			place = enqueue();
 		}
 	}
 	

@@ -3,19 +3,19 @@ if (keyboard_check(vk_escape)) { game_end() }
 if (keyboard_check_released(vk_space)) { global.debug = !global.debug }
 if (keyboard_check(ord("R"))) { game_restart() };
 if (keyboard_check_pressed(vk_enter)) {
-	var next_in_line = array_shift(global.queue);
-	if (next_in_line != undefined) {
-		next_in_line.state = s_leave_shop;
+	//var next_in_line = array_shift(global.queue);
+	if (global.customer_at_counter != undefined) {
+		global.customer_at_counter.state = s_leave_shop;
 	}
 }
 
 
-// Queue controller
-// Make sure people stand in the right place
-for (var i = 0; i < array_length(global.queue); i ++) {
-	var customer = global.queue[i]
-	customer.place = i;
-}
+//// Queue controller
+//// Make sure people stand in the right place
+//for (var i = 0; i < array_length(global.queue); i ++) {
+//	var customer = global.queue[i]
+//	customer.place = i;
+//}
 
 
 // Walkins controller
