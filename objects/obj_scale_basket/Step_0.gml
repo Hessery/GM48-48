@@ -4,7 +4,7 @@ collision_rectangle_list(
 	x - half_width,
 	y,
 	x + half_width,
-	y + sprite_get_height(sprite_index),
+	y - 300,
 	obj_item,
 	true,
 	false,

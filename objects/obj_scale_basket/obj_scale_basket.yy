@@ -26,10 +26,10 @@
   "physicsSensor":false,
   "physicsShape":1,
   "physicsShapePoints":[
-    {"x":0.0,"y":264.0,},
-    {"x":257.0,"y":264.0,},
-    {"x":257.0,"y":339.0,},
-    {"x":0.0,"y":339.0,},
+    {"x":9.0,"y":36.0,},
+    {"x":509.0,"y":36.0,},
+    {"x":509.0,"y":106.0,},
+    {"x":9.0,"y":106.0,},
   ],
   "physicsStartAwake":true,
   "properties":[],
@@ -40,9 +40,6 @@
     "name":"spr_scale_basket",
     "path":"sprites/spr_scale_basket/spr_scale_basket.yy",
   },
-  "spriteMaskId":{
-    "name":"spr_scale_basket",
-    "path":"sprites/spr_scale_basket/spr_scale_basket.yy",
-  },
+  "spriteMaskId":null,
   "visible":true,
 }

@@ -1,7 +1,46 @@
-// Quick special controls
+// Special controls
 if (keyboard_check(vk_escape)) { game_end() }
-if (keyboard_check_released(vk_space)) { global.debug = true }
+if (keyboard_check_released(vk_space)) { global.debug = !global.debug }
 if (keyboard_check(ord("R"))) { game_restart() };
+if (keyboard_check_pressed(vk_enter)) {
+	var next_in_line = array_shift(global.queue);
+	if (next_in_line != undefined) {
+		next_in_line.state = s_leave_shop;
+	}
+}
+
+
+// Queue controller
+// Make sure people stand in the right place
+for (var i = 0; i < array_length(global.queue); i ++) {
+	var customer = global.queue[i]
+	customer.place = i;
+}
+
+
+// Walkins controller
+// Only when game is running
+if (global.game_state = "game") {
+	var customers = instance_number(obj_customer);
+	var maxCustomers = 3 * global.day;
+
+	if (walkinTimer > 0) {
+		// Decrease walkin timer
+		walkinTimer --
+	} else {
+		// Reset walkin timer
+		walkinTimer = irandom_range(180, 480);  // One check per 3-8 seconds
+	
+		// Attempt a walkin
+		if (customers < maxCustomers) {
+			// Create a customer offscreen
+			instance_create_depth(-96, 96, depth, obj_customer);
+		}
+	}
+}
+
+// Customers approching the counter
+
 
 
 // Resize window
@@ -13,6 +52,13 @@ if (wh != wh_previous) { window_set_size(wh * 16, wh * 9) }
 
 ww_previous = ww;
 wh_previous = wh;
+
+
+if (global.debug) { 	
+	if (mouse_check_button_released(mb_right)) {
+		instance_create_depth(mouse_x, mouse_y, depth, obj_customer);
+	}	
+}
 
 
 // Game state switch

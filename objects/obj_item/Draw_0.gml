@@ -2,7 +2,7 @@
 var sprite_size = sprite_get_width(sprite_index);
 var target_size = 96;
 if (y > 1080) { target_size = 128 }
-var target_image_scale  = (1 / sprite_size) * target_size;
+var target_image_scale = (1 / sprite_size) * target_size;
 var dif = target_image_scale - image_scale;
 var resize_speed = 8;
 
@@ -33,4 +33,5 @@ if (global.debug) {
 		"\ny: " + string(y) + 
 		"\nValue: " + string(value)
 	)
+
 }
