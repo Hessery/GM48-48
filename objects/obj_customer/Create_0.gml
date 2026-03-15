@@ -1,5 +1,5 @@
 // Determine the characters stats
-trade_tolerance = irandom_range(0, 20);
+trade_tolerance = irandom_range(0, 50);
 walk_speed		= random_range(3, 5);
 
 // Determine the characters looks - they better look good!
